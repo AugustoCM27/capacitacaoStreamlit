@@ -16,6 +16,6 @@ st.code("st.code() - print('Hello World')")
 
 st.text("Algumas opções adicionais:")
 expander = st.expander("Você pode criar uma caixa de texto que se expande!")
-expander.write("Basta criar uma variável para sua caixa através de st.expander()")
-expander.write("Depois, é só utilizar: expander.write() para adicionar o que você quiser!")
+expander.write("Basta criar uma variável para sua caixa, como var=st.expander()")
+expander.write("Depois, é só utilizar: var.write() para adicionar o que você quiser!")
 
