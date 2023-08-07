@@ -24,5 +24,4 @@ expander.write("[Google](https://www.google.com)")
 expander.write("Adicionar o que você quer que seja clicável entre [] e o link em seguida em ()")
 expander.write("Exemplo: [texto](link)")
 
-st.write("GitHub: [LigaDS](https://github.com/LigaDS)")
 
