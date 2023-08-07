@@ -22,6 +22,6 @@ expander.write("Depois, é só utilizar: var.write() para adicionar o que você 
 expander = st.expander("Como adicionar um link clicável?")
 expander.write("[Google](https://www.google.com)")
 expander.write("Adicionar o que você quer que seja clicável entre [] e o link em seguida em ()")
-expander.write("Exemplo: [texto](link)")
+expander.write("Exemplo: '[texto](link)'")
 
 
