@@ -8,9 +8,8 @@ st.text("st.text() - Aqui você pode escrever o que quiser, é um texto")
 st.write("st.write() - Outra forma de escrever, mas com algumas opções adicionais...")
 
 expander = st.expander("Qual a diferença entre st.text e st.write?")
-expander.write("st.text: Este método é principalmente usado para exibir texto simples. 
-  Ele exibe o texto em uma fonte monoespaçada (como Courier) e não permite formatação avançada 
-  ou inserção de elementos interativos.")
+expander.write("st.text: principalmente usado para exibir texto simples, em fonte monoespaçada e não permite a inserção de elementos interativos")  
+expander.write("st.write: mais flexível e versátil, permite exibir outros conteúdos como imagens, tabelas, gráficos, etc.")
 
 st.latex("st.latex() - sin^2(x) + cos^2(x) = 1")
 st.code("st.code() - print('Hello World')")
