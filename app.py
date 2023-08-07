@@ -8,5 +8,5 @@ st.text("st.text() - Aqui você pode escrever o que quiser, é um texto")
 st.write("st.write() - Outra forma de escrever, mas com algumas opções adicionais...")
 st.markdown("st.markdown() - ")
 st.latex("sin^2(x) + cos^2(x) = 1")
-st.code("for i in range(0, 10): f(i)")
+st.code("for i in range(0, 10): \nf(i)")
 
