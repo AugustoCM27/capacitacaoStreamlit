@@ -19,3 +19,10 @@ expander = st.expander("Você pode criar uma caixa de texto que se expande!")
 expander.write("Basta criar uma variável para sua caixa, como var=st.expander()")
 expander.write("Depois, é só utilizar: var.write() para adicionar o que você quiser!")
 
+expander = st.expander("Como adicionar um link clicável?")
+expander.write("[Google](https://www.google.com)")
+expander.write("Adicionar o que você quer que seja clicável entre [] e o link em seguida em ()")
+expander.write("Exemplo: [texto](link)")
+
+st.write("GitHub: [LigaDS](https://github.com/LigaDS)")
+
