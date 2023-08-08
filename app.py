@@ -28,6 +28,7 @@ with tab_text:
   expander.write("Exemplo: '['texto']''(link)'")
 
 with tab_buttons:
-  st.button("Hit me")
+  st.button("st.button() - Isso é um botão, clique aqui!")
+  st.checkbox("st.checkbox() - Isso é uma caixa de seleção!")
 
 
