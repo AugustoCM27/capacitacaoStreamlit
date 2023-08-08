@@ -45,7 +45,7 @@ with tab_buttons:
 
   expander = st.expander("st.selectbox()")
   expander.write("Forneça o texto que acompanha a caixa e as opções no formato de lista!")
-  expander.selectbox("Isso é uma caixa de seleção, você precisa fornecer as opções para que o usuário selecione uma!, ['Opção 1', 'Opção 2'])
+  expander.selectbox("Isso é uma caixa de seleção, você precisa fornecer as opções para que o usuário selecione uma!", ['Opção 1', 'Opção 2'])
 
 
 
