@@ -30,5 +30,6 @@ with tab_text:
 with tab_buttons:
   st.button("st.button() - Isso é um botão, clique aqui!")
   st.checkbox("st.checkbox() - Isso é uma caixa de seleção!")
+  st.radio("st.radio() - Esses são botões de seleção única!", ['Opção 1', 'Opção 2', 'Opção 3'])
 
 
