@@ -28,9 +28,25 @@ with tab_text:
   expander.write("Exemplo: '['texto']''(link)'")
 
 with tab_buttons:
-  expander = st.expander("st.button")
-  expander.button("st.button() - Isso é um botão, clique aqui!")
-  st.checkbox("st.checkbox() - Isso é uma caixa de seleção!")
-  st.radio("st.radio() - Esses são botões de seleção única!", ['Opção 1', 'Opção 2', 'Opção 3'])
+  st.text("As principais funções de interatividade estão expostas aqui!")
+  
+  expander = st.expander("st.button()")
+  expander.write("Basta fornecer o texto que o botão vai conter!")
+  expander.button("Isso é um botão, clique aqui!")
+
+  expander = st.expander("st.checkbox()")
+  expander.write("É só colocar o texto que se refere à caixa de seleção!")
+  expander.checkbox("Isso é uma caixa de seleção!")
+
+  expander = st.expander("st.radio()")
+  expander.write("Você precisa fornecer o texto que introduz as opções e as opções de seleção em uma lista!")
+  expander.write("st.radio('Texto de introdução', [lista de opções])")
+  expander.radio("Esses são botões de seleção única!", ['Opção 1', 'Opção 2', 'Opção 3'])
+
+  expander = st.expander("st.selectbox()")
+  expander.write("Forneça o texto que acompanha a caixa e as opções no formato de lista!")
+  expander.selectbox("Isso é uma caixa de seleção, você precisa fornecer as opções para que o usuário selecione uma!, ['Opção 1', 'Opção 2'])
+
+
 
 
