@@ -1,7 +1,8 @@
 import streamlit as st
 
-tab_text, tab_buttons = st.tabs(['Elementos textuais',
-                                 'Botões interativos'])
+tab_text, tab_images, tab_buttons = st.tabs(['Elementos textuais',
+                                             'Imagens',
+                                             'Botões interativos'])
 with tab_text:
   # Display Text
   st.title("st.title() - Isso é um título")
