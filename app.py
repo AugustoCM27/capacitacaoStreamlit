@@ -28,8 +28,11 @@ with tab_text:
   expander.write("Adicionar o que você quer que seja clicável entre [] e o link em seguida em ()")
   expander.write("Exemplo: '['texto']''(link)'")
 
+with tab_images:
+  st.write("Em construção")
+  
 with tab_buttons:
-  st.text("As principais funções de interatividade estão expostas aqui!")
+  st.write("As principais funções de interatividade estão expostas aqui!")
   
   expander = st.expander("st.button()")
   expander.write("Basta fornecer o texto que o botão vai conter!")
@@ -46,6 +49,7 @@ with tab_buttons:
 
   expander = st.expander("st.selectbox()")
   expander.write("Forneça o texto que acompanha a caixa e as opções no formato de lista!")
+  expander.write("st.selectbox('Texto de introdução', [lista de opções])")
   expander.selectbox("Isso é uma caixa de seleção, você precisa fornecer as opções para que o usuário selecione uma!", ['Opção 1', 'Opção 2'])
 
 
