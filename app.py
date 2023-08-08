@@ -52,6 +52,9 @@ with tab_buttons:
   expander.write("st.selectbox('Texto de introdução', [lista de opções])")
   expander.selectbox("Isso é uma caixa de seleção, você precisa fornecer as opções para que o usuário selecione uma!", ['Opção 1', 'Opção 2'])
 
+  st.write("Para adicionar respostas e variações de acordo com o que o usuário seleciona, basta atribuir as funções expostas em variáveis e verificar a condição dos widgets com um 'if'.")
+  st.code("Exemplo: resposta = st.radio('Opções', [Op1, Op2, Op3]")
+  st.code("if resposta == Op1: ....")
 
 
 
