@@ -52,6 +52,21 @@ with tab_buttons:
   expander.write("st.selectbox('Texto de introdução', [lista de opções])")
   expander.selectbox("Isso é uma caixa de seleção, você precisa fornecer as opções para que o usuário selecione uma!", ['Opção 1', 'Opção 2'])
 
+  expander = st.expander("st.multiselect()")
+  expander.write("Essa função permite que você selecione mais de uma opção!")
+  expander.write("st.multiselect('Texto de introdução', [lista de opções])")
+  expander.multiselect("Você pode seleciona mais de uma opção!", ["Op1", "Op2", "Op3"])
+
+  expander = st.expander("st.slider()")
+  expander.write("O slider permite criar um controle deslizante, que vai de um valor mínimo até um máximo!")
+  expander.write("st.slider('Texto', 'min', 'max')")
+  expander.slider("Deslize até o ano que você deseja:", 2020, 2023)
+
+  expander = st.expander("st.text_input()")
+  expander.write("Função para que o usuário escreva algo")
+  expander.text_input("Digite o que você quiser!")
+          
+
   st.write("Para adicionar respostas e variações de acordo com o que o usuário seleciona, basta atribuir as funções expostas em variáveis e verificar a condição dos widgets com um 'if'.")
   st.code("Exemplo: resposta = st.radio('Opções', [Op1, Op2, Op3]")
   st.code("if resposta == Op1: ....")
