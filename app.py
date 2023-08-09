@@ -70,9 +70,9 @@ with tab_buttons:
   expander.write("Função para que o usuário forneça um número")
   expander.number_input("Escreva um número!")
 
-  expander = st.expander("st.beta_color_picker()")
+  expander = st.expander("st.color_picker()")
   expander.write("Função para que o usuário escolha uma cor")
-  expander.beta_color_picker("Escolha uma cor")
+  expander.color_picker("Escolha uma cor")
           
   expander = st.expander("st.file_uploader()")
   expander.write("O usuário pode fazer o upload de um arquivo, que seu código irá tratar!")
