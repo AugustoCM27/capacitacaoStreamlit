@@ -63,10 +63,21 @@ with tab_buttons:
   expander.slider("Deslize até o ano que você deseja:", 2020, 2023)
 
   expander = st.expander("st.text_input()")
-  expander.write("Função para que o usuário escreva algo")
+  expander.write("Função para que o usuário escreva algo (string)")
   expander.text_input("Digite o que você quiser!")
-          
 
+  expander = st.expander("st.number_input()")
+  expander.write("Função para que o usuário forneça um número")
+  expander.number_input("Escreva um número!")
+
+  expander = st.expander("st.beta_color_picker()")
+  expander.write("Função para que o usuário escolha uma cor")
+  expander.beta_color_picker("Escolha uma cor")
+          
+  expander = st.expander("st.file_uploader()")
+  expander.write("O usuário pode fazer o upload de um arquivo, que seu código irá tratar!")
+  expander.file_uploader("Faça o upload de um arquivo")
+  
   st.write("Para adicionar respostas e variações de acordo com o que o usuário seleciona, basta atribuir as funções expostas em variáveis e verificar a condição dos widgets com um 'if'.")
   st.code("Exemplo: resposta = st.radio('Opções', [Op1, Op2, Op3]")
   st.code("if resposta == Op1: ....")
