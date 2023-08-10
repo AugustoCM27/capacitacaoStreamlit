@@ -40,6 +40,7 @@ with tab_media:
   expander.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
 
   expander = st.expander("Áudio - st.audio()")
+  expander.audio("https://www.youtube.com/watch?v=DiKvx0gRfaQ")
   
   
 with tab_buttons:
