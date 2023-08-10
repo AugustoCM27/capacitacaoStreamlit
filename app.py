@@ -31,12 +31,16 @@ with tab_text:
 with tab_media:
   # Display media
   st.title("Algumas formas de adicionar conteúdos de mídia ao seu site")
-  st.subheader("Imagens - st.image()")
-  st.write("st.image(arquivo/caminho da imagem)")
-  st.image("ligads2023.jpg")
+  expander = st.expander("Imagens - st.image()")
+  expander.write("st.image(arquivo/caminho da imagem)")
+  expander.image("ligads2023.jpg")
 
-  st.subheader("Vídeos - st.video()")
-  st.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
+  expander = st.expander("Vídeos - st.video()")
+  expander.write("st.video('arquivo/caminho / URL')")
+  expander.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
+
+  expander = st.expander("Áudio - st.audio()")
+  
   
 with tab_buttons:
   # Widgets
