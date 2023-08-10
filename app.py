@@ -34,6 +34,8 @@ with tab_images:
   st.subheader("Imagens - st.image()")
   st.write("st.image(arquivo/caminho da imagem)")
   st.image("ligads2023.jpg")
+
+  st.subheader("Vídeos - st.video()")
   
 with tab_buttons:
   # Widgets
