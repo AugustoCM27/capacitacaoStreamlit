@@ -29,9 +29,14 @@ with tab_text:
   expander.write("Exemplo: '['texto']''(link)'")
 
 with tab_images:
-  st.write("Em construção")
+  # Display media
+  st.title("Algumas formas de adicionar conteúdos de mídia ao seu site")
+  st.subheader("Imagens - st.image()")
+  st.write("st.image(arquivo/caminho da imagem)")
+  st.image("ligads2023.jpg")
   
 with tab_buttons:
+  # Widgets
   st.write("As principais funções de interatividade estão expostas aqui!")
   
   expander = st.expander("st.button()")
