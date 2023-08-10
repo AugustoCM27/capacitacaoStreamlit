@@ -1,7 +1,7 @@
 import streamlit as st
 
-tab_text, tab_images, tab_buttons = st.tabs(['Elementos textuais',
-                                             'Imagens',
+tab_text, tab_media, tab_buttons = st.tabs(['Elementos textuais',
+                                             'Mídia',
                                              'Botões interativos'])
 with tab_text:
   # Display Text
@@ -28,7 +28,7 @@ with tab_text:
   expander.write("Adicionar o que você quer que seja clicável entre [] e o link em seguida em ()")
   expander.write("Exemplo: '['texto']''(link)'")
 
-with tab_images:
+with tab_media:
   # Display media
   st.title("Algumas formas de adicionar conteúdos de mídia ao seu site")
   st.subheader("Imagens - st.image()")
@@ -36,6 +36,7 @@ with tab_images:
   st.image("ligads2023.jpg")
 
   st.subheader("Vídeos - st.video()")
+  st.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
   
 with tab_buttons:
   # Widgets
