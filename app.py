@@ -44,7 +44,7 @@ with tab_media:
   
 with tab_buttons:
   # Widgets
-  st.write("As principais funções de interatividade estão expostas aqui!")
+  st.title("As principais funções de interatividade estão expostas aqui!")
   
   expander = st.expander("st.button()")
   expander.write("Basta fornecer o texto que o botão vai conter!")
