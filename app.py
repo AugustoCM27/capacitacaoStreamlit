@@ -133,12 +133,22 @@ with tab_layouts:
   # Layout
   st.title("Algumas opções de personalização da sua página!")
 
-  expander = st.expander("st.sidebar()")
+  expander = st.expander("st.sidebar")
   expander.write("Utilizando o comando st.sidebar você adiciona uma barra lateral em todas as suas abas")
   expander.write("Você pode fazer isso através de um 'with'")
   expander.code("with st.sidebar:\n   add_selectbox = st.sidebar.selectbox('texto', 'lista de opções')")
   with st.sidebar:
     add_selectbox = st.sidebar.selectbox('Aqui está um exemplo de barra lateral', ['1', '2', '3'])
+
+  expander = st.expander("st.columns")
+  expander.write("O comando st.columns pode ser útil para você organizar a posição dos elementos em sua página")
+  expander.write("Você pode criar as colunas e adicionar o que quiser com um 'with', como no exemplo:")
+  expander.code("col1, col2 = st.columns(2)\n   with col1:\n   st.video()\n with col2:\n   st.write('Descrição do vídeo')")
+  col1, col2 = st.columns(2)
+  with col1:
+    st.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
+  with col2:
+    st.write("Esse é um vídeo de uma capacitação sobre GitHub que a Liga de Data Science já fez! Confira!")
     
       
 
