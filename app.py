@@ -96,10 +96,7 @@ with tab_charts:
   st.title("Como expor suas análises de dados?")
   st.subheader("O streamlit possui suporte à diversas bibliotecas comuns para análises de dados em Python, como matplotlib, seaborn, plotly, bokeh, pydeck e muitas outras!")
 
-  data = {
-    'Nome': ['Alice', 'Bob', 'Carol', 'David', 'Eve'],
-    'Idade': [25, 30, 22, 28, 35],
-    'Pontuação': [85, 70, 90, 65, 78]}
+  data = {'Nome': ['Alice', 'Bob', 'Carol', 'David', 'Eve'], 'Idade': [25, 30, 22, 28, 35], 'Pontuação': [85, 70, 90, 65, 78]}
   df = pd.DataFrame(data)
 
   st.write("Para expor uma base de dados você pode utilizar o comando 'st.write(df)' normalmente. O resultado será esse:")
