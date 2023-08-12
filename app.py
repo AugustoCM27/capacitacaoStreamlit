@@ -144,10 +144,10 @@ with tab_layouts:
   expander.write("Você adicionar diferentes abas para o seu site")
   expander.code("tab1, tab2 = st.tabs(['Nome da aba 1', 'Nome da aba 2'])\n   with tab1:\n      st.title('Aba1')\n   with tab2:\n      st.title('Aba 2'))")
   tab1, tab2 = expander.tabs(['Aba 1', 'Aba 2'])
-    with tab1:
-      st.title("Essa é aba 1")
-    with tab2:
-      st.title("Essa é aba 2")
+  with tab1:
+    st.title("Essa é aba 1")
+  with tab2:
+    st.title("Essa é aba 2")
 
   expander = st.expander("st.columns")
   expander.write("O comando st.columns pode ser útil para você organizar a posição dos elementos em sua página")
