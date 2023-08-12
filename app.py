@@ -137,6 +137,7 @@ with tab_layouts:
   expander.write("Utilizando o comando st.sidebar você adiciona uma barra lateral em todas as suas abas")
   expander.write("Você pode fazer isso através de um 'with'")
   expander.code("with st.sidebar:\n   add_selectbox = st.sidebar.selectbox('texto', 'lista de opções')")
+  expander.write("Você pode visualizar a aba lateral criada no lado esquerdo da sua tela!")
   with st.sidebar:
     add_selectbox = st.sidebar.selectbox('Aqui está um exemplo de barra lateral', ['1', '2', '3'])
 
