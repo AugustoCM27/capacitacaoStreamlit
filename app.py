@@ -133,10 +133,14 @@ with tab_layouts:
   # Layout
   st.title("Algumas opções de personalização da sua página!")
 
-  st.subheader("st.siderbar()")
-  add_selectbox = st.sidebar.selectbox(
-      "Esse é um exemplo de barra lateral que você pode utilizar!",
-      ("Opção 1", "Opção 2", "Opção 3"))
+  expander = st.expander("st.sidebar()")
+  expander.write("Utilizando o comando st.sidebar você adiciona uma barra lateral em todas as suas abas")
+  expander.write("Você pode fazer isso através de um 'with'")
+  expander.code("with st.sidebar:\n   add_selectbox = st.sidebar.selectbox('texto', 'lista de opções')")
+  with st.sidebar:
+    add_selectbox = st.sidebar.selectbox('Aqui está um exemplo de barra lateral', ['1', '2', '3'])
+    
+      
 
 
               
