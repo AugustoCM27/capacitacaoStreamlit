@@ -140,11 +140,20 @@ with tab_layouts:
   with st.sidebar:
     add_selectbox = st.sidebar.selectbox('Aqui está um exemplo de barra lateral', ['1', '2', '3'])
 
+  expander = st.expander("st.tabs")
+  expander.write("Você adicionar diferentes abas para o seu site")
+  expander.code("tab1, tab2 = st.tabs(['Nome da aba 1', 'Nome da aba 2'])"\nwith tab1:\n   st.title('Aba1')\nwith tab2:\n   st.title('Aba 2')))
+  tab_text, tab_media, tab_buttons, tab_charts, tab_layouts = st.tabs(['Elementos textuais',
+                                                                     'Mídia',
+                                                                    'Botões interativos',
+                                                                    'Gráficos',
+                                                                    'Edições de página'])
+
   expander = st.expander("st.columns")
   expander.write("O comando st.columns pode ser útil para você organizar a posição dos elementos em sua página")
   expander.write("Você pode criar as colunas e adicionar o que quiser com um 'with', como no exemplo:")
   expander.code("col1, col2 = st.columns(2)\n   with col1:\n      st.video()\n    with col2:\n      st.write('Descrição do vídeo')")
-  st.write("Visualização em colunas:")
+  st.write("Visualização em colunas, através do st.columns:")
   col1, col2 = st.columns(2)
   with col1:
     st.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
