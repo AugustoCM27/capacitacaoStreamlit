@@ -1,8 +1,9 @@
 import streamlit as st
 
-tab_text, tab_media, tab_buttons = st.tabs(['Elementos textuais',
-                                             'Mídia',
-                                             'Botões interativos'])
+tab_text, tab_media, tab_buttons, tab_charts = st.tabs(['Elementos textuais',
+                                                        'Mídia',
+                                                        'Botões interativos',
+                                                        'Gráficos'])
 with tab_text:
   # Display Text
   st.title("st.title() - Isso é um título")
@@ -38,10 +39,6 @@ with tab_media:
   expander = st.expander("Vídeos - st.video()")
   expander.write("st.video('arquivo/caminho / URL')")
   expander.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
-
-  expander = st.expander("Áudio - st.audio()")
-  
-  
   
 with tab_buttons:
   # Widgets
@@ -94,6 +91,25 @@ with tab_buttons:
   st.write("Para adicionar respostas e variações de acordo com o que o usuário seleciona, basta atribuir as funções expostas em variáveis e verificar a condição dos widgets com um 'if'.")
   st.code("Exemplo: resposta = st.radio('Opções', [Op1, Op2, Op3]")
   st.code("if resposta == Op1: ....")
+
+with tab_charts:
+  st.title("Como expor suas análises de dados?")
+  st.subheader("O streamlit possui suporte à diversas bibliotecas comuns para análises de dados em Python, como matplotlib, seaborn, plotly, bokeh, pydeck e muitas outras!")
+
+  data = {
+    'Nome': ['Alice', 'Bob', 'Carol', 'David', 'Eve'],
+    'Idade': [25, 30, 22, 28, 35],
+    'Pontuação': [85, 70, 90, 65, 78]}
+  df = pd.DataFrame(data)
+
+  st.write("Para expor uma base de dados você pode utilizar o comando 'st.write(df)' normalmente. O resultado será esse:")
+  st.write(df)
+
+  expander = st.expander("st.line_chart()")
+  expander.line_chart(data=df, x='Nome', y='Idade')
+  
+
+              
 
 
 
