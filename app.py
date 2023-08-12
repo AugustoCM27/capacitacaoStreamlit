@@ -118,9 +118,9 @@ with tab_charts:
 
   expander = st.expander("st.pyplot()")
   expander.write("st.pyplot(fig)")
-  fig = plt.figure()
-    sns.barplot(x='Nome', y='Pontuação', data=df)
-  expander.pyplot(fig)
+  #fig = plt.figure()
+  #sns.barplot(x='Nome', y='Pontuação', data=df)
+  #expander.pyplot(fig)
 
               
 
