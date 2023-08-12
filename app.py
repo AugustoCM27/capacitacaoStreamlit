@@ -133,10 +133,10 @@ with tab_layouts:
   # Layout
   st.title("Algumas opções de personalização da sua página!")
 
-  expander = st.expander("st.sidebar()")
-  expander.write("Você pode adicionar uma barra lateral para organizar as opções de sua aplicação")
-  st.write("Utilize a notação: st.sidebar.[nome_do_elemento]")
-  st.sidebar.[element_name]
+  st.subheader("st.siderbar()")
+  add_selectbox = st.sidebar.selectbox(
+      "Esse é um exemplo de barra lateral que você pode utilizar!",
+      ("Opção 1", "Opção 2", "Opção 3"))
 
 
               
