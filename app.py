@@ -144,11 +144,12 @@ with tab_layouts:
   expander.write("O comando st.columns pode ser útil para você organizar a posição dos elementos em sua página")
   expander.write("Você pode criar as colunas e adicionar o que quiser com um 'with', como no exemplo:")
   expander.code("col1, col2 = st.columns(2)\n   with col1:\n      st.video()\n    with col2:\n      st.write('Descrição do vídeo')")
-  col1, col2 = expander.columns(2)
+  st.write("Visualização em colunas:")
+  col1, col2 = st.columns(2)
   with col1:
-    expander.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
+    st.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
   with col2:
-    expander.write("Esse é um vídeo de uma capacitação sobre GitHub que a Liga de Data Science já fez! Confira!")
+    st.write("Esse é um vídeo de uma capacitação sobre GitHub que a Liga de Data Science já fez! Confira!")
     
       
 
