@@ -120,7 +120,7 @@ with tab_charts:
   fig = plt.figure(figsize=(8, 4))
   sns.barplot(x='Nome', y='Pontuação', data=df)
   expander.write("st.pyplot(fig)")
-  st.pyplot(fig)
+  expander.pyplot(fig)
 
               
 
