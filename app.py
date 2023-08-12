@@ -1,5 +1,10 @@
 import streamlit as st
+import matplotlib.pyplot as plt
 import pandas as pd
+import plotly.graph_objs as go
+import plotly.express as px
+import seaborn as sns
+
 
 tab_text, tab_media, tab_buttons, tab_charts = st.tabs(['Elementos textuais',
                                                         'Mídia',
@@ -104,7 +109,12 @@ with tab_charts:
   st.write(df)
 
   expander = st.expander("st.line_chart()")
+  expander.write("st.line_chart(data=df, x='Nome', y='Pontuação')")
   expander.line_chart(data=df, x='Nome', y='Pontuação')
+
+  expander = st.expander("st.bar_chart()")
+  expander.write("st.bar_chart(data=df, x='Nome', y='Idade')")
+  expander.bar_chart(data=df, x='Nome', y='Idade')
   
 
               
