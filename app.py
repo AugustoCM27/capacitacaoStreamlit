@@ -6,10 +6,11 @@ import plotly.express as px
 import seaborn as sns
 
 
-tab_text, tab_media, tab_buttons, tab_charts = st.tabs(['Elementos textuais',
-                                                        'Mídia',
-                                                        'Botões interativos',
-                                                        'Gráficos'])
+tab_text, tab_media, tab_buttons, tab_charts, tab_layouts = st.tabs(['Elementos textuais',
+                                                                     'Mídia',
+                                                                    'Botões interativos',
+                                                                    'Gráficos',
+                                                                    'Edições de página'])
 with tab_text:
   # Display Text
   st.title("st.title() - Isso é um título")
@@ -99,6 +100,7 @@ with tab_buttons:
   st.code("if resposta == Op1: ....")
 
 with tab_charts:
+  # Display charts
   st.title("Como expor suas análises de dados?")
   st.subheader("O streamlit possui suporte à diversas bibliotecas comuns para análises de dados em Python, como matplotlib, seaborn, plotly, bokeh, pydeck e muitas outras!")
 
@@ -126,6 +128,16 @@ with tab_charts:
   fig = px.line(df, x='Nome', y='Idade')
   expander.write("st.plotly_chart(fig)")
   expander.plotly_chart(fig)
+
+with tab_layouts:
+  # Layout
+  st.title("Algumas opções de personalização da sua página!")
+
+  expander = st.expander("st.sidebar()")
+  expander.write("Você pode adicionar uma barra lateral para organizar as opções de sua aplicação")
+  st.write("Utilize a notação: st.sidebar.[nome_do_elemento]")
+  st.sidebar.[element_name]
+
 
               
 
