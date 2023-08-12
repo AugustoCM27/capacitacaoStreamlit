@@ -117,10 +117,10 @@ with tab_charts:
   expander.bar_chart(data=df, x='Nome', y='Idade')
 
   expander = st.expander("st.pyplot()")
-  plt.figure(figsize=(8, 4))
-  sns.barplot(x='Nome', y='Pontuação', data=df)
   expander.write("st.pyplot(fig)")
-  expander.pyplot()
+  fig = plt.figure()
+  sns.barplot(x='Nome', y='Pontuação', data=df)
+  expander.pyplot(fig)
 
               
 
