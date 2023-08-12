@@ -118,9 +118,14 @@ with tab_charts:
 
   expander = st.expander("st.pyplot()")
   expander.write("st.pyplot(fig)")
-  #fig = plt.figure()
-  #sns.barplot(x='Nome', y='Pontuação', data=df)
-  #expander.pyplot(fig)
+  fig = plt.figure()
+  sns.barplot(x='Nome', y='Pontuação', data=df)
+  expander.pyplot(fig)
+
+  expander = st.expander("st.plotly_chart()")
+  fig = px.line(df, x='Nome', y='Idade')
+  expander.write("st.plotly_chart(fig)")
+  expander.plotly_chart(fig)
 
               
 
