@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
-#import plotly
-#import seaborn as sns
+import plotly
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 tab_text, tab_media, tab_buttons, tab_charts = st.tabs(['Elementos textuais',
                                                         'Mídia',
