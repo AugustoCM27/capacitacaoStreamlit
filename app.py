@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+import seaborn as sns
 
 tab_text, tab_media, tab_buttons, tab_charts = st.tabs(['Elementos textuais',
                                                         'Mídia',
