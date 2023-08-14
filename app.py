@@ -41,7 +41,7 @@ with tab_media:
   st.title("Algumas formas de adicionar conteúdos de mídia ao seu site")
   expander = st.expander("Imagens - st.image()")
   expander.write("st.image(arquivo/caminho da imagem)")
-  expander.image("ligads2023.jpg")
+  expander.image("ligads2023_.jpg")
 
   expander = st.expander("Vídeos - st.video()")
   expander.write("st.video('arquivo/caminho / URL')")
