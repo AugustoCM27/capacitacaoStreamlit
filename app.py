@@ -40,11 +40,11 @@ with tab_media:
   # Display media
   st.title("Algumas formas de adicionar conteúdos de mídia ao seu site")
   expander = st.expander("Imagens - st.image()")
-  expander.write("st.image(arquivo/caminho da imagem)")
+  expander.code("st.image(arquivo/caminho da imagem)")
   expander.image("ligads2023_.jpg")
 
   expander = st.expander("Vídeos - st.video()")
-  expander.write("st.video('arquivo/caminho / URL')")
+  expander.code("st.video('arquivo/caminho / URL')")
   expander.video("https://www.youtube.com/watch?v=uQGxv-5lwTQ&list=PL-xocjZqCGjlJLqt7P7qqY-yxncdvKsLr")
   
 with tab_buttons:
@@ -111,22 +111,22 @@ with tab_charts:
   st.write(df)
 
   expander = st.expander("st.line_chart()")
-  expander.write("st.line_chart(data=df, x='Nome', y='Pontuação')")
+  expander.code("st.line_chart(data=df, x='Nome', y='Pontuação')")
   expander.line_chart(data=df, x='Nome', y='Pontuação')
 
   expander = st.expander("st.bar_chart()")
-  expander.write("st.bar_chart(data=df, x='Nome', y='Idade')")
+  expander.code("st.bar_chart(data=df, x='Nome', y='Idade')")
   expander.bar_chart(data=df, x='Nome', y='Idade')
 
   expander = st.expander("st.pyplot()")
-  expander.write("st.pyplot(fig)")
+  expander.code("st.pyplot(fig)")
   fig = plt.figure()
   sns.barplot(x='Nome', y='Pontuação', data=df)
   expander.pyplot(fig)
 
   expander = st.expander("st.plotly_chart()")
   fig = px.line(df, x='Nome', y='Idade')
-  expander.write("st.plotly_chart(fig)")
+  expander.code("st.plotly_chart(fig)")
   expander.plotly_chart(fig)
 
 with tab_layouts:
