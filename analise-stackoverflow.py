@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 # Carregando os dados e convertendo a coluna YearsCodePro para float
-dataset = pd.read_csv("dataset/dataset_processado.csv")
+dataset = pd.read_csv("dataset_processado.csv")
 dataset["YearsCodePro"] = dataset["YearsCodePro"].astype("float", errors="ignore")
 
 
