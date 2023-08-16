@@ -156,9 +156,9 @@ if center.button("Prever salário", key="prever_salario", use_container_width=Tr
     pais = st.session_state.pais
 
     # Carregando Label Encoders e o modelo
-    load_label_encoder_area = joblib.load("modelo/area_encoder.pkl")
-    load_label_encoder_pais = joblib.load("modelo/pais_encoder.pkl")
-    modelo = joblib.load("modelo/modelo.pkl")
+    load_label_encoder_area = joblib.load("area_encoder.pkl")
+    load_label_encoder_pais = joblib.load("pais_encoder.pkl")
+    modelo = joblib.load("modelo.pkl")
 
     area_encoded = load_label_encoder_area.transform([area_atuacao])
     pais_encoded = load_label_encoder_pais.transform([pais])
